@@ -1,26 +1,15 @@
-# neuro-ml-benchmark
+# Neuro-ML Benchmark
 
-# Reproducible Neuro-ML Benchmark Framework
+Minimal, reproducible pipeline for neuro-machine-learning experiments with explicit signal quality control.
 
-This project provides a reproducible, modality-agnostic benchmark framework for brain data,
-with an initial reference implementation on EEG.
+## Summary
+This repository implements an end-to-end neuro-ML workflow on real EEG/MEG data using MNE.  
+The focus is on correct preprocessing, mandatory QC, transparent evaluation, and reproducible artifacts rather than model novelty.
 
-## Motivation
-Neuro-ML results are often unreliable due to data leakage, unclear preprocessing,
-and irreproducible evaluation. This project focuses on:
-- leakage-safe splits (e.g., subject-wise / site-wise)
-- standardized preprocessing and QC
-- baseline and comparable models
-- reproducible artifacts and provenance
-- clear inspection of results via a Streamlit dashboard
+## Functionality
+- Event-based epoching of brain signals
+- Signal quality control (raw signal, PSD, time–frequency)
+- Baseline supervised decoding (auditory vs visual)
+- Saved evaluation artifacts and metrics
+- Lightweight inspection dashboard
 
-## Current Status
-- EEG reference implementation: in progress
-- Neuroimaging support: scaffolded (planned)
-
-## Scope (v1)
-- One EEG dataset
-- One well-defined classification task
-- Subject-wise evaluation
-- Baseline model + evaluation artifacts
-- Streamlit dashboard for inspection
