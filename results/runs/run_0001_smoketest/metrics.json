@@ -1,0 +1,14 @@
+{
+  "task": "auditory_vs_visual_decoding",
+  "n_samples": 289,
+  "n_features": 376,
+  "class_balance": {
+    "auditory": 145,
+    "visual": 144
+  },
+  "metrics": {
+    "accuracy": 0.9726027397260274,
+    "f1": 0.9714285714285714
+  },
+  "notes": "Single-subject dataset; subject-wise split not applicable"
+}
