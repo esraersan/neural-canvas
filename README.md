@@ -1,15 +1,7 @@
-# Neuro-ML Benchmark
+cortexbench 🧠
+How fast can we decode what the brain sees?
+End-to-end benchmark of EEG-to-image reconstruction pipelines — from raw brain signals to reconstructed images. Built around THINGS-EEG2, custom Triton preprocessing kernels, and a systematic sweep of encoder architectures, CLIP alignment, and diffusion decoding across FP32/FP16/INT8.
+The goal is a latency-quality frontier: given a real-time constraint, which pipeline wins?
 
-Minimal, reproducible pipeline for neuro-machine-learning experiments with explicit signal quality control.
-
-## Summary
-This repository implements an end-to-end neuro-ML workflow on real EEG/MEG data using MNE.  
-The focus is on correct preprocessing, mandatory QC, transparent evaluation, and reproducible artifacts rather than model novelty.
-
-## Functionality
-- Event-based epoching of brain signals
-- Signal quality control (raw signal, PSD, time–frequency)
-- Baseline supervised decoding (auditory vs visual)
-- Saved evaluation artifacts and metrics
-- Lightweight inspection dashboard
+Stack: PyTorch · Triton · TensorRT · OpenCLIP · Stable Diffusion XL · Nsight Systems
 
