@@ -6,7 +6,7 @@ import streamlit as st
 
 st.set_page_config(page_title="Neuro-ML Benchmark Dashboard", layout="wide")
 
-REPO_ROOT = Path("/workspaces/neuro-ml-benchmark")
+REPO_ROOT = Path("/workspaces/neural-canvas")
 RUNS_DIR = REPO_ROOT / "results" / "runs"
 
 st.title("Neuro-ML Benchmark Dashboard")
